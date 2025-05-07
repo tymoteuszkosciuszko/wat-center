@@ -14,6 +14,11 @@ const routes = [
     name: 'Subject',
     component: Subject,
     meta: { title: 'Przedmiot' }
+  },
+  {
+    path: '/pdf-viewer',
+    name: 'PdfViewer',
+    component: () => import('@/views/PdfViewer.vue')
   }
 ]
 

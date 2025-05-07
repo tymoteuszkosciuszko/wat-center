@@ -19,10 +19,10 @@
       <a
         v-for="file in content.files.filter(f => !f.startsWith('.') && f !== 'name.txt')"
         :key="file"
-        :href="`/files/${fullPath}/` + file"
+        :href="file.endsWith('.pdf') ? `/pdf-viewer?url=${encodeURIComponent(`/files/${fullPath}/` + file)}` : `/files/${fullPath}/` + file"
         class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-100 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-300 hover:text-gray-900"
         style="width: 32rem;"
-        target="_blank"
+        :target="file.endsWith('.pdf') ? '_self' : '_blank'"
         rel="noopener"
       >
         {{ getFileIcon(file) }} {{ file }}
