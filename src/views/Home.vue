@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl text-center font-me text-gray-700 mb-8">Przedmioty</h2>
+    <h2 class="text-3xl text-center font-me text-gray-700 mb-8">Strona Główna</h2>
 
     <div class="flex flex-col items-center space-y-4">
       <router-link

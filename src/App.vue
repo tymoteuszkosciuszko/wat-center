@@ -1,6 +1,9 @@
 <template>
   <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl text-center font-semibold text-gray-700 mb-6">WAT Center</h1>
+    <router-link to="/">
+      <h1 class="text-4xl text-center font-semibold text-gray-700 mb-6">WAT Center</h1>
+    </router-link>
+
     <router-view />
     <div class="flex flex-col items-center space-y-5">
       <br>
