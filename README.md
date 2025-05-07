@@ -1,5 +1,5 @@
 # wat-center
-[![en](https://img.shields.io/badge/README-🇬🇧-white.svg)](https://github.com/tymoteuszkosciuszko/wat-center/blob/main/README-en.md)
+[![en](https://img.shields.io/badge/README-EN-blue.svg)](https://github.com/tymoteuszkosciuszko/wat-center/blob/main/README-en.md)
 
 Strona z materiałami do nauki na WAT, oparta o Vue 3, Vite i Tailwind CSS.
 

@@ -1,5 +1,5 @@
 # wat-center
-[![pl](https://img.shields.io/badge/README-🇵🇱-white.svg)](https://github.com/tymoteuszkosciuszko/wat-center/blob/main/README.md)
+[![pl](https://img.shields.io/badge/README-PL-red.svg)](https://github.com/tymoteuszkosciuszko/wat-center/blob/main/README.md)
 
 A website with learning materials for WAT (Military University of Technology), based on Vue 3, Vite, and Tailwind CSS.
 
