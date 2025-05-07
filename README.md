@@ -1,34 +1,42 @@
 # wat-center
-Strona z materiałami do nauki na WAT
+Strona z materiałami do nauki na WAT, oparta o Vue 3, Vite i Tailwind CSS.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Struktura projektu
+Materiały są zorganizowane według przedmiotów. Każdy przedmiot może mieć własne podkategorie (np. Sprawozdania, Teoria, Notatki), zawarte jako podfoldery:
+```
+public/
+└── files/
+    ├── fizyka/
+    │   ├── Sprawozdania/
+    │   │   ├── Sprawko1.pdf
+    │   │   └── index.json
+    │   └── index.json
+    ├── aok/
+    └── jee/
+```
+Z przyczyn oczywistych rzeczywiste pliki z materiałami zostały usunięte. Na faktycznej stronie (o linku znanym tylko wtajemniczonym 🤫) znajdują się wszystkie materiały.
 
-## Recommended IDE Setup
+## Funkcjonalności
+- Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera
+- Automatyczne generowanie index.json dla wszystkich folderów i podfolderów (Node.js)
+- Minimalistyczny i responsywny design z Tailwind CSS
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+## Konfiguracja projektu
+1. Zainstaluj zależności:
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+2. Wygeneruj pliki ```index.json```:
+```shell
+npm run generate-index
+```
+3. Uruchom lokalny serwer:
 ```sh
 npm run dev
 ```
-
-### Type-Check, Compile and Minify for Production
-
+4. Aby zbudować projekt do produkcji, uruchom:
 ```sh
 npm run build
 ```
+
+Wszelkie usterki proszę zgłaszać na GitHubie lub na mailu dostępnym na stronie.

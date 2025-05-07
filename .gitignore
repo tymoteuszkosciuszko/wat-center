@@ -15,6 +15,7 @@ coverage
 *.local
 
 public/files/*
+.szajs
 
 /cypress/videos/
 /cypress/screenshots/

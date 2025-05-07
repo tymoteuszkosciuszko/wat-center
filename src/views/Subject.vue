@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -30,12 +30,21 @@ const subject = route.params.subject
 const subjectTitle = subject.charAt(0).toUpperCase() + subject.slice(1)
 const files = ref([])
 
+const updateTitle = () => {
+  document.title = `${subjectTitle} - WAT Center`
+}
+
 onMounted(async () => {
+  updateTitle()
   try {
     const res = await fetch(`/files/${subject}/index.json`)
     files.value = await res.json()
   } catch (err) {
     console.error('Błąd ładowania plików:', err)
   }
+})
+
+watch(() => route.params.subject, () => {
+  updateTitle()
 })
 </script>

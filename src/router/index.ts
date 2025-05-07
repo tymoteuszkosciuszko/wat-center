@@ -4,8 +4,8 @@ import Subject from '@/views/Subject.vue'
 
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/subject/:subject', name: 'Subject', component: Subject }
+  { path: '/', name: 'Home', component: Home, meta: { title: 'Strona Główna' } },
+  { path: '/subject/:subject', name: 'Subject', component: Subject, meta: { title: 'Przedmiot' } }
 ]
 
 const router = createRouter({
