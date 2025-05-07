@@ -1,6 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-6">
-    <h1 class="text-4xl text-center font-semibold text-gray-700 mb-4">WAT Center</h1>
+  <div class="container mx-auto px-4">
     <h2 class="text-3xl text-center font-me text-gray-700 mb-8">{{ subjectTitle }}</h2>
 
     <div class="flex flex-col items-center space-y-4">
@@ -9,19 +8,19 @@
         :key="file"
         :href="`/files/${subject}/` + file"
         class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-400 hover:text-gray-900"
-        style="width: 24rem;"
+        style="width: 32rem;"
         target="_blank"
         rel="noopener"
       >
         {{ file }}
       </a>
-      <router-link to="/" class="text-xl shadow-md rounded flex-auto text-gray-700 text-center bg-red-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-gray-900" style="width: 24rem;">
-        Powrót do strony głównej </router-link>
+      <router-link to="/" class="text-xl shadow-md rounded flex-auto text-gray-700 text-center bg-red-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-gray-900" style="width: 32rem;">
+        Powrót</router-link>
     </div>
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
