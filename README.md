@@ -1,4 +1,6 @@
 # wat-center
+[![en](https://img.shields.io/badge/README-🇬🇧-white.svg)](https://github.com/tymoteuszkosciuszko/wat-center/blob/main/README-en.md)
+
 Strona z materiałami do nauki na WAT, oparta o Vue 3, Vite i Tailwind CSS.
 
 ## Struktura projektu
@@ -19,7 +21,7 @@ Z powodu wielkości (jak i liczebności) plików, nie są one rzecz jasna przech
 ## Funkcjonalności (niektóre jeszcze TODO)
 - 🔄 Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera
 - 🔄 Obsługa nie tylko plików, ale także linków do materiałów zewnętrznych
-- 🔄 Wbudowana przeglądarka PDF (z użyciem PDF.js) i podgląd obrazków
+- 🔄 Wbudowana przeglądarka PDF i podgląd obrazków
 - ✅ Automatyczne generowanie index.json dla wszystkich folderów i podfolderów (Node.js)
 - ✅ Minimalistyczny i responsywny design z Tailwind CSS
 
