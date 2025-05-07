@@ -1,18 +1,17 @@
 <template>
   <div class="container mx-auto px-4">
+    <h2 class="text-3xl text-center font-me text-gray-700 mb-8">Przedmioty</h2>
 
     <div class="flex flex-col items-center space-y-4">
-      <RouterLink
-        v-for="subject in subjects"
-        :key="subject"
-        :to="`/subject/${subject}`"
-        class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-400 hover:text-gray-900"
+      <router-link
+        v-for="folder in content.folders"
+        :key="folder"
+        :to="`/subject/${folder}`"
+        class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-100 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-300 hover:text-gray-900"
         style="width: 32rem;"
       >
-        {{ formatSubject(subject) }}
-      </RouterLink>
-      <br>
-      <h3><a class="text-blue-400 transition duration-300 ease-in-out hover:text-blue-700" href="https://github.com/tymoteuszkosciuszko/wat-center">Repozytorium GitHub</a></h3>
+        {{ folder }}
+      </router-link>
     </div>
   </div>
 </template>
@@ -20,17 +19,20 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 
-const subjects = ref([])
+const content = ref({ files: [], folders: [] })
 
-onMounted(async () => {
+const loadContent = async () => {
   try {
     const res = await fetch('/files/index.json')
-    subjects.value = await res.json()
+    content.value = await res.json()
   } catch (err) {
-    console.error('Nie udało się pobrać listy przedmiotów:', err)
+    console.error('Błąd ładowania zawartości:', err)
+    content.value = { files: [], folders: [] }
   }
-})
+}
 
-const formatSubject = (s) =>
-  s.charAt(0).toUpperCase() + s.slice(1).replace(/_/g, ' ')
+onMounted(() => {
+  document.title = 'Strona Główna – WAT Center'
+  loadContent()
+})
 </script>

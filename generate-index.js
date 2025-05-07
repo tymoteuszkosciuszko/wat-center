@@ -3,27 +3,35 @@ import path from 'path'
 
 const baseDir = path.join(process.cwd(), 'public', 'files')
 
-// Pobierz foldery (czyli przedmioty)
-const subjects = fs.readdirSync(baseDir).filter((name) => {
-  return fs.statSync(path.join(baseDir, name)).isDirectory()
-})
+function generateIndex(dirPath) {
+  const items = fs.readdirSync(dirPath)
+  const files = []
+  const folders = []
 
-// Zapisz listę przedmiotów do files/index.json
-const subjectsIndexPath = path.join(baseDir, 'index.json')
-fs.writeFileSync(subjectsIndexPath, JSON.stringify(subjects, null, 2), 'utf-8')
-console.log(`✔️  Zapisano index.json z przedmiotami`)
+  items.forEach((item) => {
+    const fullPath = path.join(dirPath, item)
+    const isDirectory = fs.statSync(fullPath).isDirectory()
 
-subjects.forEach((subject) => {
-  const subjectPath = path.join(baseDir, subject)
-
-  // Pobierz pliki w folderze (bez index.json)
-  const files = fs.readdirSync(subjectPath).filter((file) => {
-    const fullPath = path.join(subjectPath, file)
-    return fs.statSync(fullPath).isFile() && file !== 'index.json'
+    if (isDirectory) {
+      folders.push(item)
+      generateIndex(fullPath) // rekursywne generowanie dla podfolderów
+    } else if (item !== 'index.json') {
+      files.push(item)
+    }
   })
 
-  // Zapisz index.json dla danego przedmiotu
-  const outputPath = path.join(subjectPath, 'index.json')
-  fs.writeFileSync(outputPath, JSON.stringify(files, null, 2), 'utf-8')
-  console.log(`✔️  Zapisano index.json dla ${subject}`)
-})
+  const indexContent = {
+    files,
+    folders
+  }
+
+  fs.writeFileSync(
+    path.join(dirPath, 'index.json'),
+    JSON.stringify(indexContent, null, 2),
+    'utf-8'
+  )
+  console.log(`✔️  Zapisano index.json dla ${path.relative(baseDir, dirPath) || 'głównego folderu'}`)
+}
+
+// Start generowania od głównego folderu
+generateIndex(baseDir)

@@ -14,6 +14,9 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  build: {
+    charset: 'utf-8'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
