@@ -14,7 +14,7 @@ public/
     ├── aok/
     └── jee/
 ```
-Z przyczyn oczywistych rzeczywiste pliki z materiałami zostały usunięte. Na faktycznej stronie (o linku znanym tylko wtajemniczonym 🤫) znajdują się wszystkie materiały.
+Z powodu wielkości plików, nie są one rzecz jasna przechowywane w repozytorium, natomiast są one dostępne na [stronie WAT Center](https://wat.21152115.xyz) (Tak, kupiłem domenę .xyz ponieważ była śmiesznie tania, don't blame me).
 
 ## Funkcjonalności
 - Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera

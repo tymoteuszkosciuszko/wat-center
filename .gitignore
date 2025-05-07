@@ -16,6 +16,9 @@ coverage
 
 public/files/*
 .szajs
+server-upload.sh
+*.tar.xz
+archives
 
 /cypress/videos/
 /cypress/screenshots/

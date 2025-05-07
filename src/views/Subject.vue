@@ -15,7 +15,7 @@
       >
         {{ file }}
       </a>
-      <router-link to="/" class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-400 hover:text-gray-900" style="width: 24rem;">
+      <router-link to="/" class="text-xl shadow-md rounded flex-auto text-gray-700 text-center bg-red-200 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-red-400 hover:text-gray-900" style="width: 24rem;">
         Powrót do strony głównej </router-link>
     </div>
   </div>
@@ -31,7 +31,7 @@ const subjectTitle = subject.charAt(0).toUpperCase() + subject.slice(1)
 const files = ref([])
 
 const updateTitle = () => {
-  document.title = `${subjectTitle} - WAT Center`
+  document.title = `${subjectTitle} – WAT Center`
 }
 
 onMounted(async () => {
