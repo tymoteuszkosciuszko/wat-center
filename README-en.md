@@ -19,7 +19,7 @@ public/
 Due to the size (as well as the number) of files, they are obviously not stored in the repository; however, they are available on the [WAT Center website](https://wat.21152115.xyz) (Yes, I bought a .xyz domain because it was ridiculously cheap, don't blame me).
 
 ## Features (some still TODO)
-- 🔄 Dynamic route generation for subjects and their subcategories using Vue Router
+- ✅ Dynamic route generation for subjects and their subcategories using Vue Router
 - 🔄 Support for not only files but also links to external materials
 - 🔄 Built-in PDF viewer and image preview
 - ✅ Automatic generation of index.json for all folders and subfolders (Node.js)
