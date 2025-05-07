@@ -16,6 +16,7 @@
     <br>
     <div class="flex flex-col items-center space-y-5">
       <h3>Kontakt: <a class="text-blue-400" href="mailto:hello@21152115.xyz">hello@21152115.xyz</a></h3>
+      <h3><a class="text-blue-400" href="https://github.com/tymoteuszkosciuszko/wat-center">Repozytorium GitHub</a></h3>
     </div>
   </div>
 </template>
