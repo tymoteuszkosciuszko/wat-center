@@ -12,6 +12,7 @@
       >
         {{ folder }}
       </router-link>
+      <a class="text-blue-400 transition duration-300 ease-in-out hover:text-blue-700 py-4" href="https://github.com/tymoteuszkosciuszko/wat-center">Repozytorium GitHub</a>
     </div>
   </div>
 </template>
