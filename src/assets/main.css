@@ -1,4 +1,10 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+/*@import './base.css';
 
 #app {
   max-width: 1280px;
@@ -33,3 +39,4 @@ a,
     padding: 0 2rem;
   }
 }
+*/
