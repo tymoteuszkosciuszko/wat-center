@@ -14,12 +14,12 @@ public/
     ├── aok/
     └── jee/
 ```
-Z powodu wielkości plików, nie są one rzecz jasna przechowywane w repozytorium, natomiast są one dostępne na [stronie WAT Center](https://wat.21152115.xyz) (Tak, kupiłem domenę .xyz ponieważ była śmiesznie tania, don't blame me).
+Z powodu wielkości (jak i liczebności) plików, nie są one rzecz jasna przechowywane w repozytorium, natomiast są one dostępne na [stronie WAT Center](https://wat.21152115.xyz) (Tak, kupiłem domenę .xyz ponieważ była śmiesznie tania, don't blame me).
 
-## Funkcjonalności
-- Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera
-- Automatyczne generowanie index.json dla wszystkich folderów i podfolderów (Node.js)
-- Minimalistyczny i responsywny design z Tailwind CSS
+## Funkcjonalności (niektóre jeszcze TODO)
+- 🔄 Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera
+- ✅ Automatyczne generowanie index.json dla wszystkich folderów i podfolderów (Node.js)
+- ✅ Minimalistyczny i responsywny design z Tailwind CSS
 
 ## Konfiguracja projektu
 1. Zainstaluj zależności:
@@ -39,4 +39,5 @@ npm run dev
 npm run build
 ```
 
-Wszelkie usterki proszę zgłaszać na GitHubie lub na mailu dostępnym na stronie.
+Wszelkie usterki proszę zgłaszać na GitHubie lub na mailu dostępnym na stronie. Nie obiecuję, że się nimi zajmę.
+Tak samo jeżeli posiadasz materiały, które chciałbyś umieścić, napisz maila na adres podany na stronie.
