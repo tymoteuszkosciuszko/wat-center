@@ -21,7 +21,7 @@ Due to the size (as well as the number) of files, they are obviously not stored 
 ## Features (some still TODO)
 - ✅ Dynamic route generation for subjects and their subcategories using Vue Router
 - 🔄 Support for not only files but also links to external materials
-- 🔄 Built-in PDF viewer and image preview
+- ✅ Built-in PDF viewer and image preview
 - ✅ Automatic generation of index.json for all folders and subfolders (Node.js)
 - ✅ Minimalist and responsive design with Tailwind CSS
 
