@@ -7,10 +7,9 @@
         v-for="folder in content.folders"
         :key="folder"
         :to="`/subject/${folder}`"
-        class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-100 px-4 py-5 m-2 transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-300 hover:text-gray-900"
-        style="width: 32rem;"
+        class="text-xl shadow-md rounded text-gray-700 text-center bg-gray-100 px-4 py-5 m-2 w-[70%] max-w-full transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-300 hover:text-gray-900"
       >
-        {{ folder }}
+        <span class="break-all">📁 {{ folder }}</span>
       </router-link>
       <a class="text-blue-400 transition duration-300 ease-in-out hover:text-blue-700 py-4" href="https://github.com/tymoteuszkosciuszko/wat-center">Repozytorium GitHub</a>
     </div>
