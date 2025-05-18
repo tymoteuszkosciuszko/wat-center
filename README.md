@@ -16,7 +16,7 @@ public/
     ├── aok/
     └── jee/
 ```
-Z powodu wielkości (jak i liczebności) plików, nie są one rzecz jasna przechowywane w repozytorium, natomiast są one dostępne na [stronie WAT Center](https://wat.21152115.xyz) (Tak, kupiłem domenę .xyz ponieważ była śmiesznie tania, don't blame me).
+Z powodu wielkości (jak i liczebności) plików, nie są one przechowywane w repozytorium.
 
 ## Funkcjonalności (niektóre jeszcze TODO)
 - ✅ Dynamiczne generowanie tras dla przedmiotów i ich podkategorii z użyciem Vue Routera

@@ -8,7 +8,7 @@
       <!-- Przycisk poprzedniego zdjęcia -->
       <button
         @click.stop="prevImage"
-        class="absolute left-0 top-0 bottom-0 w-1/4 flex items-center px-4 text-4xl text-gray-800 hover:bg-black/10 hover:cursor-pointer transition-colors"
+        class="absolute left-0 top-0 bottom-0 w-10% flex items-center px-4 text-4xl text-gray-800 hover:bg-black/10 hover:cursor-pointer transition-colors"
       >
         ⬅️
       </button>
@@ -24,7 +24,7 @@
       <!-- Przycisk następnego zdjęcia -->
       <button
         @click.stop="nextImage"
-        class="absolute right-0 top-0 bottom-0 w-1/4 flex items-center justify-end px-4 text-4xl text-gray-800 hover:cursor-pointer hover:bg-black/10 transition-colors"
+        class="absolute right-0 top-0 bottom-0 w-10% flex items-center justify-end px-4 text-4xl text-gray-800 hover:cursor-pointer hover:bg-black/10 transition-colors"
       >
         ➡️
       </button>

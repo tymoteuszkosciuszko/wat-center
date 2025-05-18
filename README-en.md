@@ -16,7 +16,7 @@ public/
     ├── aok/
     └── jee/
 ```
-Due to the size (as well as the number) of files, they are obviously not stored in the repository; however, they are available on the [WAT Center website](https://wat.21152115.xyz) (Yes, I bought a .xyz domain because it was ridiculously cheap, don't blame me).
+Due to the size (as well as the number) of files, they are not stored in the repository.
 
 ## Features (some still TODO)
 - ✅ Dynamic route generation for subjects and their subcategories using Vue Router
